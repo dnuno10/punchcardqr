@@ -1,0 +1,77 @@
+<body style="margin:0; padding:0; background:#F7F8FA; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F7F8FA; padding:48px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:440px; background:#FFFFFF; border-radius:16px; overflow:hidden; border:1px solid #E1E4EA;">
+
+          <!-- Brand header -->
+          <tr>
+            <td style="padding:32px 32px 24px; text-align:center; border-bottom:1px solid #EEF0F4;">
+              <span style="font-size:22px; font-weight:800; letter-spacing:-0.3px;">
+                <span style="color:#16233F;">Punch</span><span style="color:#2F6FED;">Card</span><span style="color:#16233F;">QR</span>
+              </span>
+              <div style="margin-top:6px; font-size:11px; font-weight:600; letter-spacing:1.2px; color:#9AA2AF; text-transform:uppercase;">
+                Secure sign-in
+              </div>
+            </td>
+          </tr>
+
+          <!-- Copy -->
+          <tr>
+            <td style="padding:32px 32px 8px; text-align:center;">
+              <p style="margin:0; font-size:15px; color:#16233F; font-weight:600;">Your sign-in code</p>
+              <p style="margin:6px 0 0; font-size:13px; color:#6C7688; line-height:1.5;">
+                Use this code to finish signing in to your PunchCardQR business dashboard.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Code -->
+          <tr>
+            <td style="padding:20px 32px 8px; text-align:center;">
+              <div style="display:inline-block; background:#EEF3FE; border:1px solid #D7E3FC; border-radius:12px; padding:20px 28px; font-size:32px; font-weight:800; letter-spacing:9px; color:#16233F; font-family:'SFMono-Regular',Consolas,Menlo,monospace;">
+                {{ .Token }}
+              </div>
+            </td>
+          </tr>
+
+          <!-- Expiry -->
+          <tr>
+            <td style="padding:16px 32px 0; text-align:center;">
+              <p style="margin:0; font-size:12.5px; color:#9AA2AF;">
+                This code expires in 1 hour and can only be used once.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Spam notice -->
+          <tr>
+            <td style="padding:24px 32px 8px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EEF3FE; border-radius:10px;">
+                <tr>
+                  <td style="padding:14px 16px; font-size:12.5px; color:#1E52C4; line-height:1.5;">
+                    <strong>Don't see this email?</strong> Check your spam or junk folder — sign-in codes sometimes land there. Adding
+                    <strong>no-reply@punchcardqr.com</strong> to your contacts helps future emails arrive in your inbox.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px 32px; text-align:center; border-top:1px solid #EEF0F4; margin-top:8px;">
+              <p style="margin:16px 0 0; font-size:12px; color:#9AA2AF; line-height:1.6;">
+                If you didn't request this code, you can safely ignore this email — no account changes will be made.
+              </p>
+              <p style="margin:12px 0 0; font-size:11px; color:#C8CDD6;">
+                © PunchCardQR · Enterprise loyalty infrastructure
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
