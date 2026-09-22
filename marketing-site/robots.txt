@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://punchcardqr.com/sitemap.xml
