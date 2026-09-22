@@ -24,7 +24,9 @@ class AppException implements Exception {
     'forbidden': 'This card belongs to a different business.',
   };
 
-  String get message => _messages[code] ?? 'Something went wrong. Please try again.';
+  String get message => code == 'stripe_error' && data['message'] is String
+      ? 'Stripe error: ${data['message']}'
+      : _messages[code] ?? 'Something went wrong. Please try again.';
 
   @override
   String toString() => 'AppException($code)';
